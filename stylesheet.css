@@ -1,0 +1,1237 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(0, 31, 53);
+    align-items: center;
+}
+
+.navigation div a
+{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.logo
+{
+    margin-right: auto;
+}
+
+.background
+{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/codeBackground.jpeg");
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.frontpage
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+.fronttitle
+{
+    text-align: center;
+    justify-self: center;
+}
+
+.iconrow
+{
+    text-align: center;
+    justify-self: center;
+}
+
+h1
+{
+    font-size: 15vh;
+    text-align: center;
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-youtube-square, .fa-instagram-square
+{
+    color: white;
+    font-size: 7vh;
+    margin: 0 5px;
+}
+
+
+.fa-facebook-square:hover
+{
+    color: blue;
+}
+
+.fa-youtube-square:hover
+{
+    color: red;
+}
+
+.fa-twitter-square:hover
+{
+    color: rgb(15, 195, 255);
+}
+
+.fa-instagram-square:hover
+{
+    color: rgb(199, 0, 199);
+}
+
+.navigation i
+{
+    margin: 0 3px;
+}
+
+.iconrow div i
+{
+    text-shadow: 10px 10px 10px black;
+}
+
+.logo a
+{
+    font-family: 'Pacifico', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.logo
+{
+    display: inline-block;
+}
+
+.navigation > div:hover > a{
+    color: rgb(0, 31, 53);
+    background: white;
+}
+
+.footer
+{
+    min-height: 75px;
+    display: grid;
+    background: rgb(0, 31, 53);
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 3vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer i
+{
+    font-size: 5vh;
+}
+
+.footerBlockOne
+{
+    grid-column: 1;
+}
+
+.footerBlockTwo
+{
+    grid-column: 2;
+}
+
+.footer a
+{
+    margin: 10px;
+}
+
+.footerLogo
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 5vh;
+}
+
+.photogallery
+{
+    display: flex;
+}
+
+.container
+{
+    width: 250px;
+    height: 250px;
+
+    perspective: 1000px;
+    -ms-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    margin: 15px 0;
+}
+
+h3, p{
+    color: white;
+}
+
+.inner
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all .8s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+
+.frontCard, .backCard
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.backCard
+{
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+
+.frontCard
+{
+    background: rgba(0, 31, 53, .8);
+    border: 3px solid white;
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    align-items: center;
+}
+
+
+.frontCard p
+{
+    grid-row: 3;
+    margin: 0 5px;
+    font-size: 23px;
+}
+
+
+.container:hover .inner, .container:focus .inner, .container:active .inner
+{
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+
+.container:hover .backCard, .container:focus .backCard, .container:active .backCard
+{
+    z-index: 1000;
+}
+
+
+
+
+
+
+img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.cardGallery
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 275px);
+    
+    justify-content: space-evenly;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.cardTitle
+{
+    grid-row: 1;
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+    margin: 50px;
+}
+
+.pdfResume
+{
+    grid-row: 6;
+    width: 100%;
+    text-align: center;
+}
+
+.secondpage
+{
+    min-height: 100vh;
+}
+
+
+iframe
+{
+    width: 80%;
+    padding-top: 80px;
+}
+
+
+.slideshow
+{
+    position: relative;
+    width: 75vw;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.slideshow div
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+    padding: 50px 0 200px 0;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 350px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("./images/ss2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ #slides .slide_2 {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("./images/ss5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ #slides .slide_3 {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("./images/ss1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ #slides .slide_4 {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("./images/ss3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .6;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+
+ span{
+  
+
+    font-size:18vh;
+    text-align: center;
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+                          8px 8px gray,
+                          20px 20px #001f35;
+  }
+ 
+  #slider span
+  {
+      font-size: 14vh;
+  }
+  .thirdPage
+  {
+      overflow: hidden;
+  }
+
+  video
+  {
+      width: 100vw;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: -5px;
+    padding-bottom: 0;
+  }
+
+  .floatingBorder
+  {
+    display: grid; 
+    margin: auto; /* to center */
+    margin-top: calc(50vh - 170px); /* to center */
+    width: 900px; height: 500px; 
+      position: absolute;
+      background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0));
+      top: 0;
+      left: 0;
+  }
+
+  ::selection {
+    background: #19f6e8;
+  }
+  .svg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+  }
+  .shape1,
+  .shape2 {
+    stroke-dasharray: 1120;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition-timing-function: linear;
+    transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+  }
+  .shape1 {
+    stroke-dashoffset: 1120;
+  }
+  .shape2 {
+    stroke-dashoffset: -1120;
+  }
+  .text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: pink;
+    top: -48px;
+    position: relative;
+  }
+  .svg-wrapper:hover .shape1,
+  .svg-wrapper:hover .shape2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1120;
+  }
+
+  fieldset {
+    border: 10px solid transparent; 
+    border-top-color: black; 
+    box-sizing: border-box; 
+    grid-area: 1 / 1; /* first row, first column */
+    padding: 20px; 
+    width: inherit; 
+  }
+
+  fieldset:nth-of-type(2){ transform: rotate(90deg); }
+/* rotate to bottom */
+fieldset:nth-of-type(3){ transform: rotate(180deg); }
+/* rotate to left */
+fieldset:nth-of-type(4){ transform: rotate(-90deg); }
+
+legend {
+    font: 15pt/0 'Averia Serif Libre'; 
+    margin: auto; /* to center */
+    padding: 0 4px; 
+  }
+  
+  fieldset:nth-of-type(3) > legend { 
+    transform: rotate(180deg);
+  }
+
+  .overlay
+  {
+      height: 100%;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35));
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .overlay i{
+      transition: all .10s ease-out;
+  }
+
+  .overlay i:hover
+  {
+      transform: translateY(50px);
+  }
+
+  .overlay .arrow1:hover ~ #box1
+  {
+      transform: translateY(-150px);
+    display: block;
+    grid-row: 3;
+    grid-column: 1;
+    border: none;
+  }
+
+  .overlay .arrow2:hover ~ #box2
+  {
+      transform: translateY(-150px);
+    display: block;
+    grid-row: 3;
+    grid-column: 2;
+    border: none;
+  }
+
+  .overlay .arrow3:hover ~ #box3
+  {
+      transform: translateY(-150px);
+    display: block;
+    grid-row: 3;
+    grid-column: 3;
+    border: none;
+  }
+
+  #box1 h1, #box2 h1, #box3 h1
+  {
+      border: none;
+  }
+
+  .contactPage
+  {
+    min-height: 100vh;
+    text-align: center;
+  }
+ 
+  .contactContainer
+  {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      align-content: center;
+      justify-content: space-evenly;
+      padding-top: 30px;
+      flex-wrap: wrap;
+  }
+
+  .contactBox
+  {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      perspective: 1000px;
+    -ms-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+      margin-bottom: 15px;
+  }
+
+  .contactInner
+  {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+        transition: all .2s ease-out;
+        transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+      
+  }
+
+  .contactFront
+  {
+      width: 200px;
+      height: 250px;
+      position: absolute;
+      top: 0px;
+      left: 73px;
+      z-index: 3;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border: 6px solid white;
+      background: rgb(0, 31, 53);
+      color: white;
+      transition: all .5s ease-out;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+  }
+
+
+  .child
+  {
+      align-self: center;
+      justify-self: center;
+  }
+
+  .contactSide
+  {
+      position: absolute;
+      top: 12px;
+      left: 200px;
+      color: white;
+      width: 200px;
+      height: 226px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      background: rgb(0, 31, 53);
+      transform: rotateY(70deg);
+      border: 6px solid white;
+  }
+
+  .contactBox img
+  {
+      height: 80px;
+      width: 80px;
+  }
+
+  .contactFront h3, .contactFront i
+  {
+text-align: center;
+  }
+
+
+  h1{
+    z-index: 100;
+    color: rgb(0, 31, 53);
+    text-shadow: 3px white;
+    border: 8px solid rgb(0, 31, 53);
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.item1
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.item2
+{
+    display: none;
+}
+
+.arrow1
+{
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    align-self: flex-start;
+}
+.arrow2
+{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: flex-start;
+}
+.arrow3
+{
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.thirdPage
+{
+    overflow: hidden;
+    position:relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#box1, #box2, #box3
+{
+    transform: translateY(-100px);
+    border: none;
+    display: none;
+}
+
+.item1
+    {
+        grid-column: 2;
+        grid-row: 1;
+        z-index: 100;
+    color: rgb(0, 31, 53);
+    text-shadow: 3px white;
+    border: none;
+    }
+    
+    .arrow1
+    {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .arrow2
+    {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .arrow3
+    {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    
+    .thirdPage
+    {
+        overflow: hidden;
+        position:relative
+    }
+    
+    h1{
+        z-index: 100;
+        color: rgb(0, 31, 53);
+        text-shadow: 3px white;
+        border: 8px solid rgb(0, 31, 53);
+    }
+
+    .contactSide a
+    {
+        color: blue;
+    }
+
+.contactSide p{
+        text-align: left;
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .contactSide p, .contactSide a{
+        font-size: 15px;
+    }
+
+#firstContact
+{
+    display: none;
+}
+
+#firstContact:checked + label > div > div
+{
+    transform: rotateY(-70deg);
+}
+
+#firstContact:checked + label > div > div .contactFront
+{
+    transform: rotateY(-180deg);
+}
+
+#secondContact
+{
+    display: none;
+}
+
+#secondContact:checked + label > div > div
+{
+    transform: rotateY(-70deg);
+}
+
+#secondContact:checked + label > div > div .contactFront
+{
+    transform: rotateY(-180deg);
+}
+
+#thirdContact
+{
+    display: none;
+}
+
+#thirdContact:checked + label > div > div
+{
+    transform: rotateY(-70deg);
+}
+
+#thirdContact:checked + label > div > div .contactFront
+{
+    transform: rotateY(-180deg);
+}
+
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
+ @media screen and (max-width: 768px)
+ {
+     .navigation
+     {
+         justify-content: flex-end;
+     }
+     .navigation .logo
+     {
+         display: none;
+     }
+     .footer
+     {
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .footerBlockTwo
+     {
+         display: none;
+     }
+
+     .frontpage
+     {
+         height: 100vh;
+     }
+
+     #box1 h1, #box2 h1, #box3 h1
+    {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    #box1, #box2, #box3
+    {
+        grid-row: 5;
+        align-self: flex-end;
+    }
+
+     
+ }
+
+ @media screen and (max-width: 1000px)
+ {
+    
+    .item1
+    {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .arrow1
+    {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .arrow2
+    {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .arrow3
+    {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    
+    .thirdPage
+    {
+        overflow: hidden;
+        position:relative
+    }
+    
+    #box1, #box2, #box3
+    {
+        transform: translateY(0px);
+        border: none;
+        align-self: flex-end;
+    }
+
+    #box1
+    {
+        grid-row: 5;
+        grid-column: 1;
+        transform: translateY(0px);
+        align-self: flex-start;
+    }
+
+    .overlay
+    {
+        grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    .overlay .arrow1:hover ~ #box1
+  {
+      transform: translateY(-150px);
+    display: block;
+    grid-row: 5;
+    grid-column: 1;
+    border: none;
+    align-self: flex-start;
+  }
+
+  .overlay .arrow2:hover ~ #box2
+  {
+    transform: translateY(-150px);
+    display: block;
+    grid-row: 5;
+    grid-column: 2;
+    border: none;
+    align-self: flex-start;
+  }
+
+  .overlay .arrow3:hover ~ #box3
+  {
+    transform: translateY(-150px);
+    display: block;
+    grid-row: 5;
+    grid-column: 3;
+    border: none;
+    align-self: flex-start;
+  }
+ }
+
+ @media screen and (max-width: 668px)
+ {
+     span{
+         font-size: 10vw;
+     }
+
+     #slider span{
+         font-size: 10vh;
+         text-shadow: none;
+     }
+    
+    .item1
+    {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .item1 h1
+    {
+        font-size: 75%;
+    }
+
+    
+    .arrow1
+    {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .arrow2
+    {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .arrow3
+    {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    
+    .thirdPage
+    {
+        overflow: hidden;
+        position:relative
+    }
+    
+    #box1, #box2, #box3
+    {
+        transform: translateY(0px);
+        border: none;
+        align-self: flex-end;
+    }
+
+    #box1
+    {
+        grid-row: 5;
+        grid-column: 1;
+        transform: translateY(0px);
+    }
+
+    .overlay
+    {
+        grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    .overlay .arrow1:hover ~ #box1
+  {
+      transform: translateY(-50px);
+    display: block;
+    grid-row: 5;
+    grid-column: 1;
+    border: none;
+    align-self: flex-start;
+  }
+
+  .overlay .arrow2:hover ~ #box2
+  {
+    transform: translateY(-50px);
+    display: block;
+    grid-row: 5;
+    grid-column: 2;
+    border: none;
+    align-self: flex-start;
+  }
+
+  .overlay .arrow3:hover ~ #box3
+  {
+    transform: translateY(-50px);
+    display: block;
+    grid-row: 5;
+    grid-column: 3;
+    border: none;
+    align-self: flex-start;
+  }
+ }
+
+ @media screen and (max-width: 552px)
+ {
+    .arrow1, .arrow2, .arrow3, #box1, #box2, #box3, .item1
+    {
+        display: none;
+    }
+
+    .item2
+    {
+        display: block;
+        grid-row: 3;
+        grid-column: 2;
+        font-size: 15vw;
+    }
+    video{
+        height: 100vh;
+        width: auto;
+        left: -45%;
+    }
+ }
+
+ @media screen and (max-width: 550px)
+ {
+
+
+    .navigation
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 50px);
+        justify-content: center;
+        background: rgb(0, 31, 53);
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navigation div a
+    {
+        display: block;
+        padding: 15px 15px;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    .logo
+    {
+        justify-self: center;
+    }
+
+    .home
+    {
+        grid-row: 1;
+        grid-column: 1/-1;
+    }
+
+    .container:hover .inner, .container:focus .inner, .container:active .inner
+{
+    transform: rotateY(180deg);
+}
+
+.container:hover .backCard, .container:focus .backCard, .container:active .backCard
+{
+    z-index: 1000;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 250px;
+ }
+
+ #slider span
+ {
+     font-size: 6vh;
+     letter-spacing:0.05em;
+ }
+
+ }
+
+@supports (display: grid)
+{
+    .frontpage
+{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+.fronttitle
+{
+    grid-row: 2;
+    justify-content: center;
+    text-align: center;
+}
+
+.iconrow
+{
+    grid-row: 3;
+    justify-self: center;
+}
+
+
+}
+
+@media screen and (max-width: 500px)
+{
+    video{
+        left: -75%;
+    }
+}
