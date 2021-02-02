@@ -72,7 +72,7 @@ h1
     text-align: center;
 }
 
-.fa-facebook-square, .fa-twitter-square, .fa-youtube-square, .fa-instagram-square
+.fa-linkedin, .fa-twitter-square, .fa-youtube-square, .fa-stack-overflow, .fa-github-square
 {
     color: white;
     font-size: 7vh;
@@ -80,9 +80,9 @@ h1
 }
 
 
-.fa-facebook-square:hover
+.fa-github-square:hover
 {
-    color: blue;
+    color: rgb(0, 0, 0);
 }
 
 .fa-youtube-square:hover
@@ -90,14 +90,14 @@ h1
     color: red;
 }
 
-.fa-twitter-square:hover
+.fa-linkedin:hover
 {
-    color: rgb(15, 195, 255);
+    color: rgb(11, 134, 175);
 }
 
-.fa-instagram-square:hover
+.fa-stack-overflow:hover
 {
-    color: rgb(199, 0, 199);
+    color: rgb(241, 149, 28);
 }
 
 .navigation i
@@ -874,6 +874,10 @@ body{
 #thirdContact:checked + label > div > div .contactFront
 {
     transform: rotateY(-180deg);
+}
+
+.slide1 span:hover + .slide1{
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("./images/ss2.jpg");
 }
 
  @media screen and (max-width: 900px) {

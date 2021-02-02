@@ -1,2 +1,8 @@
 document.querySelector("#myCard").classList.toggle("flip")
-let thisVar = 10;
+let myArray = [];
+let pushBack = true;
+
+pushBack ? myArray.push([], [], []) : pushBack =false ;
+
+console.log(myArray);
+
